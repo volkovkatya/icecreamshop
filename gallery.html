@@ -1,0 +1,66 @@
+<!--next line states html5 is used-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Frozen Fiesta - Ice Cream</title>
+	<link rel="icon" href="images/logo.png">
+	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<meta name="description" content="Frozen Fiesta - Ice Cream">
+	<meta name="keywords" content="Ice cream, Frozen Fiesta">
+	<meta name="author" content="Ekaterina Volkov">
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+</head>
+<body>
+	<!-- the header consist of 2 parts:	header backround and main part above the background that contains the nav bar with the bottons in it -->
+	<header>
+		<section id="headerBg">
+			<!-- the logo image is inside a link element that when clicking on it it returns to the home page -->
+			<a id="headerBgCenter" href="index.html"><img id="headerBgLogo" src="images/logo4.png" alt="logo ice cream"></a>
+		</section>
+		<nav id="headerFg">
+			<a href="index.html">Home</a>
+			<a href="flavors.html">Flavors</a>
+			<a href="branches.html">Branches</a>
+			<a href="gallery.html">Gallery</a>
+		</nav>
+	</header>
+	<main>
+		<section class="pageContent">
+			<img id="pageContentBanner" src="images/f1.jpg" alt="ice cream banner"/>
+			<section id="flavorsMainTitle">Our Gallery:</section>
+			<br>
+			<img class="galleryPictures galleryBorder" src="images/p1.png" alt="ice cream pictute"/>
+			<img class="galleryPictures galleryBorder" src="images/p2.png" alt="ice cream pictute"/>
+			<img class="galleryPictures galleryBorder" src="images/p3.jpg" alt="ice cream pictute"/>
+			<img class="galleryPictures galleryBorder" src="images/p4.jpg" alt="ice cream pictute"/>
+		</section>
+	</main>
+	<!-- the footer consist of the logo image and 3 items that each contain the image and text next to it --> 
+	<footer>
+		<img id="footerLogo" src="images/logo2.png" alt="footer logo ice cream" height="50"/>
+		<span class="footerItem">
+			<img src="images/shipping.png" alt="icon shipping" height="70"/>
+			<span>
+				Free Delivery
+			</span>
+		</span>
+		<span class="footerItem">
+			<img src="images/discount.png" alt="icon shipping" height="50"/>
+			<span>
+				Daily Discount
+			</span>
+		</span>
+		<span class="footerItem">
+			<img src="images/tel.png" alt="icon tel" height="45"/>
+			<span>
+				Tel: 09-12345678
+			</span>
+		</span>
+	</footer>
+	<!-- the link is styled so it looks like an arrow so when click on it goes back to top of the page -->
+	<a id="backToTopBotton" href="gallery.html">
+		<img src="images/arrowup.png" alt="back to top" width="50">
+	</a>
+</body>
+</html>

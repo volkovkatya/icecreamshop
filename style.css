@@ -1,0 +1,298 @@
+/* --------- general body rules ---------- */
+
+body {
+    background-color: #f3c7c6;
+    background-image: url(images/b1.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: auto;
+    background-attachment: fixed; /* this property sets the background image's position is fixed within the viewport */
+    font-size: 125%;
+    font-family: Garamond,serif;
+    margin: 0px;
+}
+
+/* --------- header rules ---------- */
+
+header {
+    z-index: 200; /* this line is responsible to make the main content is below part of the header */
+    position: relative; /* this property is responsible to make the header relative to the body */
+    font-family: Courier;
+}
+
+#headerBg {
+    color: white;
+    background-color: #e699b1;
+    height: 95px;
+    text-align: center;
+}
+
+#headerBgLogo {
+    width: 20%;
+}
+
+#headerBgCenter {
+    font-size: 275%;
+}
+
+#headerFg {
+    background-color: #fdffff;
+    width: 70%;
+    position: absolute;
+    bottom: -35%;
+    right: 15%;
+    display: inline-block; /* by setting 'display' as 'inline-block', the footer items are in the same line as other elements */
+}
+
+/* --------- header nav bar rules ---------- */
+
+nav {
+    border: solid 0px;
+    border-radius: 35px;
+    text-align: center;
+}
+
+/* this rule is applied to every img in the nav */
+nav img {
+    vertical-align: middle;
+}
+
+nav a {
+    color: black;
+    text-align: center;
+    font-size: 120%;
+    text-decoration: none;
+    margin: 20px;
+    transition: color .15s ease-in-out; /* this line is responsible for the animation in the rule below */
+    display: inline-block;
+}
+
+/* this rule is responsible to change the color of the link when the mouse is over it */
+nav a:hover {
+    color: #e699b1;
+}
+
+/* this rule is new and adds a psuedo element right after the link inside the nav */
+nav a:after {
+    background-color: transparent;
+    content: '';
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 0px;
+    transition: width .5s ease, background-color .5s ease; /* this line is responsible for the animation in the rule below */
+}
+
+/* this rule is responsible to change the width and color of the psuedo element when the mouse is over the link */
+nav a:hover:after {
+    background-color: #e699b1;
+    width: 100%;
+}
+
+/* --------- main content rules ---------- */
+
+#mainContent {
+    z-index: 100; 
+    background-image: url("images/m1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    min-height: 760px; /* this line is responsible to make the main content at least 760px tall */
+}
+
+.pageContent{
+    z-index: 100;
+    background-color: #fcf3f2;
+    text-align: center;
+    min-height: 800px;
+    width: 95%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+#pageContentBanner {
+    width: 100%;
+}
+
+main section {
+    color: white;
+    margin: 0px;
+}
+
+#mainContentHeader {
+    padding-top: 350px;
+    font-weight: 1000; /* this line is responsible to make the text bold */
+    font-size: 350%;
+}
+
+#mainContentSubHeader {
+    padding-top: 30px;
+    font-weight: 1000;
+    font-size: 150%;
+}
+
+#galleryWikiPicture {
+    width: 30%;
+}
+
+.galleryPictures {
+    width: 80%;
+}
+
+/* this rule is responsible to style a button for the gallery page */
+#galleryButton {
+    color: #ffffff;
+    background-color: #ecc9c7;
+    border: solid 1px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 150%;
+    font-weight: 800;
+    margin: 15px;
+    padding: 10px 30px;
+    display: inline-block;
+}
+
+/* this rule is responsible to change the color of the button when the mouse is over it */
+#galleryButton:hover {
+    background-color: #e699b1;
+}
+
+#flavorsMainTitle {
+    color: #ecc9c7;
+    font-size: 300%;
+    padding-top: 50px;
+}
+
+.myList {
+    padding-top: 20px;
+    list-style: none;
+    margin-block-start: 0px; /* this line is responsible to remove the default margin of the list */
+    margin-bottom: 0px;
+}
+
+.flavorsItem {
+    background-color: #ecc9c7;
+    margin-bottom: 10px;
+    width: 50%;
+    text-align: left;
+}
+
+/* this rule is new and responsible to make every second item (even index) in the list to be on the right side */
+.flavorsItem:nth-child(even) {
+    margin-left: 47%;
+}
+
+.flavorsImage {
+    width: 35%;
+    vertical-align: middle;
+}
+
+.flavorContent {
+    width: 60%;
+    margin-top: 20px;
+    float: right; /* this line is responsible to make the content of the flavor to be on the right side */
+}
+
+.flavorsTitle {
+    font-size: 200%;
+    font-weight: 800; 
+}
+
+.flavorsText {
+    font-size: 125%;
+}
+
+.branchItem {
+    background-color: #ecc9c7;
+    border: solid 0px;
+    margin-top: 20px;
+    width: 97%;
+    list-style: none;
+}
+
+.branchItemContent {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+.branchLocation {
+    margin-top: 30px;
+    width: 50%;
+    height: 450px;
+    border: 0px;
+}
+
+/* this rule is applied to both the table and the table data (td) elements */
+table, td {
+    color: #e699b1;
+    border:1px solid #e699b1;
+    border-radius: 10px;
+    font-size: 120%;
+}
+
+table { 
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.galleryBorder {
+    border: solid 1px #e699b1;
+    padding: 5px;
+}
+
+#shopDescription {
+    color: #ffffff;
+    background-color: #ecc9c7;
+    font-size: 170%;
+    display: inline-block;
+    width: 75%;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* this rule set the position of the "back to top" arrow at the bottom right corner of the screen */
+#backToTopBotton {
+    position: fixed; /* this line is responsible to make the button fixed in the view */
+    bottom: 65px;
+    right: 30px;
+}
+
+.openHoursList li {
+    margin-bottom: 10px;
+    list-style: square;
+}
+
+#flavorList {
+    color: #ecc9c7;
+    font-size: 150%;
+    text-align: initial; /* this property reverses the effect of other rules */
+    display: inline-block;
+}
+
+/* --------- footer rules ---------- */
+
+footer {
+    background-color: #e699b1;
+}
+
+.footerItem{
+    color: white;
+}
+
+.footerItem img {
+    vertical-align: middle; /* this property is responsible to align the image in the middle of the text vertically */
+    margin-left: 15px;
+}
+
+#footerLogo{
+    border: solid 0px;
+    border-radius: 85px;
+    vertical-align: middle;
+    margin-left: 19%;
+    padding: 10px;
+}
