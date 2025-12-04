@@ -1,6 +1,6 @@
 <!--next line states html5 is used-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he">
 <head>
 	<title>Frozen Fiesta - Ice Cream</title>
 	<link rel="icon" href="images/logo.png">
@@ -26,29 +26,32 @@
 			<a href="about.html">About</a>
 		</nav>
 	</header>
-	<main>
+	<!-- the content of the main tag is written in hebrew so direction is right to left -->
+	<main dir="rtl">
 		<section class="pageContent">
-			<section id="mainContent">
-				<!-- using a section so the element takes the entire row -->
-				<section id="mainContentHeader">Welcome to our ice cream shop</section>
-				<!-- using a section so the element takes the entire row -->
-				<section id="mainContentSubHeader">Since 2024</section>
-				<!-- the link is styled in the css so it looks like a button that when click on it the user is navigated to the gallery page -->
-				<a id="flavorsButton" href="flavors.html">Our Flavors</a>
+			<img id="pageContentBanner" src="images/f1.jpg" alt="ice cream banner"/>
+			<section id="shopDescription">
+				Frozen Fiesta is a whimsical ice cream shop that invites you into a world of delightful flavors and vibrant colors. 
+				As soon as you step through the doors, you’re greeted by the sweet aroma of freshly churned ice cream and the cheerful decor that 
+				mirrors the joy of indulging in your favorite frozen treat. With an array of unique and classic flavors, 
+				Frozen Fiesta caters to every palate, ensuring that each scoop is a celebration of creamy goodness. 
+				Whether you’re a fan of the timeless vanilla bean or the adventurous dragon fruit swirl, there’s a flavor to start your own fiesta. 
+				And it’s not just about the ice cream – it’s the experience of creating joyful memories with every visit, 
+				making Frozen Fiesta a cherished destination for all ages. 
 			</section>
 		</section>
 	</main>
-	<!-- the footer consist of the logo image and 3 items that each contain the image and text next to it -->
+	<!-- the footer consist of the logo image and 3 items that each contain the image and text next to it --> 
 	<footer>
 		<img id="footerLogo" src="images/logo2.png" alt="footer logo ice cream" height="50"/>
 		<span class="footerItem">
 			<img src="images/shipping.png" alt="icon shipping" height="70"/>
 			<span>
-				Free Delivery   
+				Free Delivery
 			</span>
 		</span>
 		<span class="footerItem">
-			<img src="images/discount.png" alt="icon shipping" height="50"/>
+			<img src="images/discount.png" alt="icon discount" height="50"/>
 			<span>
 				Daily Discount
 			</span>
@@ -61,8 +64,8 @@
 		</span>
 	</footer>
 	<!-- the link is styled so it looks like an arrow so when click on it goes back to top of the page -->
-	<a id="backToTopBotton" href="index.html">
-		<img src="images/arrowup.png" alt="back to top" width="50">
+	<a id="backToTopBotton" href="about.html">
+		<img src="images/arrowup.png" alt="back to top arrow" width="50">
 	</a>
 </body>
 </html>

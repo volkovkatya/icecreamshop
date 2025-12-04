@@ -105,10 +105,11 @@ nav a:hover:after {
     z-index: 100;
     background-color: #fcf3f2;
     text-align: center;
-    min-height: 800px;
+    min-height: 760px;
     width: 95%;
     margin: auto;
-    padding-bottom: 20px;
+    padding: 0px;
+    /* padding-bottom: 20px; */
 }
 
 #pageContentBanner {
@@ -141,7 +142,7 @@ main section {
 }
 
 /* this rule is responsible to style a button for the gallery page */
-#galleryButton {
+#flavorsButton {
     color: #ffffff;
     background-color: #ecc9c7;
     border: solid 1px;
@@ -155,7 +156,7 @@ main section {
 }
 
 /* this rule is responsible to change the color of the button when the mouse is over it */
-#galleryButton:hover {
+#flavorsButton:hover {
     background-color: #e699b1;
 }
 
@@ -267,11 +268,15 @@ table {
     list-style: square;
 }
 
-#flavorList {
+#shortFlavorList {
     color: #ecc9c7;
     font-size: 150%;
     text-align: initial; /* this property reverses the effect of other rules */
     display: inline-block;
+}
+
+#flavorsList {
+    padding-bottom: 20px;
 }
 
 /* --------- footer rules ---------- */
